@@ -1,1 +1,8 @@
-spring.application.name=notes-app
+spring:
+  datasource:
+    driver-class-Name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/notes_app_db
+    username: "postgres"
+    password: "1234"
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yml
